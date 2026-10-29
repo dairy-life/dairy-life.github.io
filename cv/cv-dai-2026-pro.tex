@@ -1,0 +1,147 @@
+\documentclass[10pt,a4paper]{article}
+
+% Compile with pdfLaTeX
+\usepackage[margin=1.45cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{paracol}
+\usepackage{microtype}
+
+\definecolor{accent}{HTML}{234E70}
+\definecolor{muted}{HTML}{555F66}
+\hypersetup{colorlinks=true,urlcolor=accent}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlist[itemize]{leftmargin=1.15em, nosep, topsep=2pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\pagestyle{empty}
+
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill{\small\color{muted}#2}\\
+  \textit{#3}\\[-2pt]
+  #4\par\vspace{4pt}
+}
+\newcommand{\sideheading}[1]{\section*{#1}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{accent} Ruiyang DAI}\\[3pt]
+  {\normalsize Innovative Numerical Methods \textbullet\ High-Performance Computing}\\
+  {\normalsize Applied Mathematics}
+\end{center}
+\vspace{-4pt}
+
+\columnratio{0.31,0.69}
+\begin{paracol}{2}
+\setlength{\columnsep}{0.7cm}
+
+% LEFT COLUMN
+\sideheading{Contact}
+\small
+%\textbf{Phone}\\
+%+33 0666666666\\[3pt]
+\textbf{Email}\\
+\href{mailto:ruiyang.dai@inria.fr}{ruiyang.dai@inria.fr}\\[3pt]
+\textbf{Address}\\
+Pau, France
+\normalsize
+
+\sideheading{Summary}
+I am a mathematical engineer specialized in 
+Innovative Numerical Methods and High-Performance Computing 
+for partial differential equations.\\[3pt]
+
+I am passionate about exploring new ideas and integrating modern technologies 
+with classical numerical techniques 
+to develop efficient and reliable numerical methods.\\[3pt]
+
+With strong organizational skills, 
+I can manage multiple projects simultaneously, 
+assess different methodologies, 
+and evaluate the strengths and limitations of each approach 
+to identify the most effective solutions.
+
+\sideheading{Expertise}
+\begin{itemize}
+  \item Numerical methods for partial differential equations
+  \item Scientific Machine Learning
+\end{itemize}
+
+\sideheading{Programming Languages}
+Fortran, C, C++, Python
+
+\sideheading{Languages}
+\begin{itemize}
+  \item Chinese (Native)
+  \item English (Fluent)
+  \item French  (Fluent)
+  \item Italian (Basic)
+\end{itemize}
+
+\switchcolumn
+
+% RIGHT COLUMN
+\section*{Professional Experience}
+
+\entry{Starting research position}{12/2025 -- Present}{INRIA Bordeaux}{
+\begin{itemize}
+  \item Acceleration of full-waveform inversion for seismic applications.
+  \item Development of numerical methods for wave propagation.
+\end{itemize}}
+
+\entry{Postdoctoral Fellow}{01/2025 -- 09/2025}{INRIA Paris \& Sorbonne University}{
+\begin{itemize}
+  \item Machine learning and evolution equations.
+  \item Machine learning for the Fokker-Planck-Landau equation.
+\end{itemize}}
+
+\entry{Postdoctoral Fellow}{09/2021 -- 12/2024}{Sorbonne University}{
+\begin{itemize}
+  \item Moment methods for Vlasov equations with a non-constant magnetic field.
+  \item Spectral methods for the Vlasov--Poisson system.
+\end{itemize}}
+
+\entry{PhD in the ERC HEXTREME project}{10/2016 -- 08/2021}{UCLouvain}{
+\begin{itemize}
+  \item Generalized preconditioners for domain decomposition methods applied to Helmholtz problems. 
+  \item Numerical methods for wave propagation.
+\end{itemize}}
+
+\section*{Teaching Experience}
+
+\entry{Sorbonne University}{2024 -- 2025}{Level: Master's degree}{
+Subject areas: Numerical analysis, Linear algebra.\\
+Course name: Foundations of numerical methods.\\
+Instructor: Albert Cohen.}
+
+\entry{Sorbonne University}{2023 -- 2024}{Level: Master's degree}{
+Subject areas: Numerical analysis, Linear algebra.\\
+Course name: Foundations of numerical methods.\\
+Instructor: Albert Cohen.}
+
+\entry{Universit\'e Paris Cit\'e}{2023 -- 2024}{Level: Master's degree}{
+Subject areas: Partial differential equations.\\
+Course name: Introduction to partial differential equations.\\
+Instructor: Luca Alasio.}
+
+\section*{Education}
+
+\entry{PhD}{2016 -- 2021}{Engineering Sciences}{
+Universit\'e catholique de Louvain, Louvain-la-Neuve, Belgium.}
+
+\entry{Master's degree}{2014 -- 2016}{Applied Mechanics}{
+\'Ecole Centrale de Nantes, Nantes, France.}
+
+\entry{Bachelor's degree}{2010 -- 2014}{Mechanics}{
+Wuhan University, Wuhan, China.}
+
+\end{paracol}
+\end{document}
